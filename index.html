@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tris contro IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tris contro IA</h1>
+        <div class="level-selection">
+            <h3>Scegli il livello di difficoltà:</h3>
+            <button class="level-btn" onclick="setDifficulty(1)">Facile (20%)</button>
+            <button class="level-btn" onclick="setDifficulty(2)">Medio (50%)</button>
+            <button class="level-btn" onclick="setDifficulty(3)">Difficile (99%)</button>
+        </div>
+        <div id="board" class="board"></div>
+        <button class="reset-btn" onclick="resetGame()">Resetta Gioco</button>
+    </div>
+
+    <!-- Sezione Crediti -->
+    <footer>
+        <p>Crediti a: Gabriel Ferrara</p>
+    </footer>
+
+    <script src="TrisAI.js"></script>
+</body>
+</html>
